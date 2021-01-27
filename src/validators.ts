@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Ref, ComputedRef, unref, toRef } from 'vue'
+import { Ref, ComputedRef, unref, toRef } from '@vue/composition-api'
 import { FieldGroupType } from '.'
 import { getLength, hasValue, isField } from './utils'
 
@@ -106,7 +106,7 @@ const executeEqualsByFieldName = (equalToFieldName: string) => (value: any, cont
   let equalToValue = null
   if (context) {
     const field = context.get(equalToFieldName)
-    if (isField(field)) equalToValue = unref(field?.value)
+    if (field && isField(field)) equalToValue = unref(field.value)
   }
   return (hasValue(value) || hasValue(equalToValue)) ? value === equalToValue : true
 }

@@ -1,4 +1,4 @@
-import { computed, reactive, ref } from 'vue'
+import { computed, reactive, ref } from '@vue/composition-api'
 import { requiredIf } from '../../src'
 
 describe('requiredIf validator', () => {

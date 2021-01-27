@@ -1,22 +1,22 @@
-# vue-validus
+# vue2-validus
 
 [![License][license-image]][license-url]
 [![NPM][npm-image]][npm-url]
 [![codecov][codecov-image]][codecov-url]
 [![circleci][circleci-image]][circleci-url]
 
-> Extensible, lightweight validation library for Vue 3
+> Duplicate of [vue-validus](https://github.com/dev-tavern/vue-validus) which supports Vue 2 with Composition API.  The repo will pull updates from the vue-validus repo as necessary to stay up to date with latest changes.
 
 ## Get Started
 
-View the [documentation](https://vue-validus.devtavern.com) for a complete guide, including examples and API reference.
+View the vue-validus [documentation](https://vue-validus.devtavern.com) for a complete guide, including examples and API reference.  The documentation is for Vue 3 but will be mostly accurate for Vue 2 with Composition API, except for the difference in imports.
 
 ### Install
 ```bash
 # install with npm
-npm install vue-validus --save
+npm install vue2-validus --save
 # install with yarn
-yarn add vue-validus --save
+yarn add vue2-validus --save
 ```
 
 ### Usage
@@ -26,8 +26,8 @@ Below is a simple example of one approach for leveraging vue-validus for validat
 #### Composition API
 
 ```typescript
-import { defineComponent, ref } from 'vue'
-import { field, fieldGroup, required } from 'vue-validus'
+import { defineComponent, ref } from '@vue/composition-api'
+import { field, fieldGroup, required } from 'vue2-validus'
 export default defineComponent({
   setup() {
     // example: field group containing fields with values sourced from refs
@@ -67,8 +67,8 @@ At this point, since our field values are backed by refs, you could set an input
 It is recommended to define your validation field & field groups within the component's `setup` function as demonstrated in the above Composition API example.  However, if needed, you can define these within the Options API's `data` structure.
 
 ```typescript
-import { defineComponent } from 'vue'
-import { field, fieldGroup, required } from 'vue-validus'
+import { defineComponent } from '@vue/composition-api'
+import { field, fieldGroup, required } from 'vue2-validus'
 export default defineComponent({
   data() {
     return {
@@ -101,11 +101,11 @@ Changes for each release are documented in the [CHANGELOG](CHANGELOG.md) file.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-[npm-image]: https://img.shields.io/npm/v/vue-validus.svg
-[npm-url]: https://npmjs.org/package/vue-validus
+[npm-image]: https://img.shields.io/npm/v/vue2-validus.svg
+[npm-url]: https://npmjs.org/package/vue2-validus
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg
 [license-url]: LICENSE
-[codecov-image]: https://codecov.io/gh/dev-tavern/vue-validus/branch/main/graph/badge.svg?token=IFCU4CBZWR
-[codecov-url]: https://codecov.io/gh/dev-tavern/vue-validus
-[circleci-image]: https://circleci.com/gh/dev-tavern/vue-validus.svg?style=svg
-[circleci-url]: https://circleci.com/gh/dev-tavern/vue-validus
+[codecov-image]: https://codecov.io/gh/dev-tavern/vue2-validus/branch/main/graph/badge.svg?token=IFCU4CBZWR
+[codecov-url]: https://codecov.io/gh/dev-tavern/vue2-validus
+[circleci-image]: https://circleci.com/gh/dev-tavern/vue2-validus.svg?style=svg
+[circleci-url]: https://circleci.com/gh/dev-tavern/vue2-validus

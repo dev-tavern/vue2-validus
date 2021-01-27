@@ -1,4 +1,4 @@
-import { Ref, reactive, computed, toRef, ComputedRef } from 'vue'
+import { Ref, reactive, computed, toRef, ComputedRef } from '@vue/composition-api'
 import { Field } from '.'
 import { getFromFields } from './utils'
 
