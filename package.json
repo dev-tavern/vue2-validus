@@ -1,18 +1,18 @@
 {
-  "name": "vue-validus",
+  "name": "vue2-validus",
   "version": "1.0.0-beta.4",
-  "description": "Extensible lightweight validation library for Vue 3",
+  "description": "Extensible lightweight validation library for Vue 2 Composition API",
   "author": "Josh Gamble",
   "license": "MIT",
-  "main": "dist/vue-validus.cjs.js",
-  "module": "dist/vue-validus.esm.js",
-  "browser": "dist/vue-validus.umd.js",
+  "main": "dist/vue2-validus.cjs.js",
+  "module": "dist/vue2-validus.esm.js",
+  "browser": "dist/vue2-validus.umd.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist/**/*"
   ],
-  "repository": "https://github.com/dev-tavern/vue-validus",
-  "homepage": "https://vue-validus.devtavern.com",
+  "repository": "https://github.com/dev-tavern/vue2-validus",
+  "homepage": "https://github.com/dev-tavern/vue2-validus",
   "scripts": {
     "build": "rollup -c",
     "build:types": "tsc --emitDeclarationOnly true --removeComments false",
@@ -25,19 +25,17 @@
     "preversion": "npm run lint && npm run test",
     "version": "npm run lint:fix && git add -A src",
     "postversion": "git push && git push --tags",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
     "ci:test": "jest --coverage --ci --maxWorkers=2"
   },
   "peerDependencies": {
-    "vue": "^3.0.0"
+    "@vue/composition-api": "^1.0.0-rc.1"
   },
   "devDependencies": {
     "@types/jest": "^26.0.19",
     "@typescript-eslint/eslint-plugin": "^4.9.1",
     "@typescript-eslint/parser": "^4.9.1",
-    "@vue/test-utils": "^2.0.0-beta.13",
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "@vue/test-utils": "^1.1.2",
     "eslint": "^7.15.0",
     "jest": "^26.6.3",
     "rollup": "^2.35.1",
@@ -47,13 +45,13 @@
     "rollup-plugin-typescript2": "^0.29.0",
     "ts-jest": "^26.4.4",
     "typescript": "^4.1.2",
-    "vitepress": "^0.9.1",
-    "vue": "^3.0.0"
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12"
   },
   "keywords": [
     "validus",
     "vue",
-    "vue 3",
+    "vue 2",
     "validation",
     "validate",
     "form",

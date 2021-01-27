@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Ref, ComputedRef, unref, toRef } from 'vue'
+import { Ref, ComputedRef, unref, toRef } from '@vue/composition-api'
 import { FieldGroupType } from '.'
 import { getLength, hasValue, isField } from './utils'
 

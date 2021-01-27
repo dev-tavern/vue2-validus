@@ -1,4 +1,4 @@
-import { Ref, ref, unref, reactive } from 'vue'
+import { Ref, ref, unref, reactive } from '@vue/composition-api'
 import { FieldGroup, Validator } from '.'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

@@ -1,4 +1,4 @@
-import { reactive, ref } from 'vue'
+import { reactive, ref } from '@vue/composition-api'
 import { field, fieldGroup, minLength, required, Validator } from '../src'
 
 const validField = () => field([required()], 'test')

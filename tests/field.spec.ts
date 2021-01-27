@@ -1,4 +1,4 @@
-import { reactive, ref, toRef } from 'vue'
+import { reactive, ref, toRef } from '@vue/composition-api'
 import { field, minLength, required } from '../src'
 
 describe('field', () => {

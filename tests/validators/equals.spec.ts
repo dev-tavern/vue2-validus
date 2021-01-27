@@ -1,4 +1,4 @@
-import { ref } from 'vue'
+import { ref } from '@vue/composition-api'
 import { equals, field } from '../../src'
 
 describe('equals validator', () => {

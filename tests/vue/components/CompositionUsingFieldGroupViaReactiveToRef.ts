@@ -1,4 +1,4 @@
-import { defineComponent, reactive, toRef } from 'vue'
+import { defineComponent, reactive, toRef } from '@vue/composition-api'
 import { field, fieldGroup, minLength, required } from '../../../src'
 
 const template = `
