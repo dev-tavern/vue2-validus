@@ -29,17 +29,23 @@ function createEntry(config) {
       file: config.file, 
       format: config.format
     },
-    external: ['vue'],
+    external: ['vue', '@vue/composition-api'],
+    globals: {
+      'vue': 'Vue',
+      '@vue/composition-api': 'VueCompositionApi'
+    },
     onwarn: (msg, warn) => {
       if (!/Circular/.test(msg)) {
         warn(msg)
       }
     }
   }
-  
+
   if (config.format === 'umd') {
-    c.output.name = c.output.name || 'vue-validus'
-    c.output.globals = { 'vue': 'vue' }
+    c.output.name = c.output.name || 'vue2-validus'
+    c.output.globals = { 
+      'vue': 'vue'
+    }
   }
 
   c.plugins.push(resolve())
