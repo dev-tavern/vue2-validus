@@ -4,6 +4,9 @@
 [![NPM][npm-image]][npm-url]
 [![codecov][codecov-image]][codecov-url]
 [![circleci][circleci-image]][circleci-url]
+![minified][minified-image]
+![minzipped][minzipped-image]
+![tree-shaking][tree-shaking-image]
 
 > Duplicate of [vue-validus](https://github.com/dev-tavern/vue-validus) which supports Vue 2 with Composition API.  The repo will pull updates from the vue-validus repo as necessary to stay up to date with latest changes.
 
@@ -109,3 +112,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [codecov-url]: https://codecov.io/gh/dev-tavern/vue2-validus
 [circleci-image]: https://circleci.com/gh/dev-tavern/vue2-validus.svg?style=svg
 [circleci-url]: https://circleci.com/gh/dev-tavern/vue2-validus
+[minified-image]: https://badgen.net/bundlephobia/min/vue2-validus
+[minzipped-image]: https://badgen.net/bundlephobia/minzip/vue2-validus
+[tree-shaking-image]: https://badgen.net/bundlephobia/tree-shaking/vue2-validus

@@ -5,7 +5,7 @@ import { terser } from 'rollup-plugin-terser'
 import pkg from './package.json'
 
 const banner = `/*!
- * vue-validus v${pkg.version}
+ * vue2-validus v${pkg.version}
  * Copyright (c) ${new Date().getFullYear()} Josh Gamble
  * @license MIT
  */`
