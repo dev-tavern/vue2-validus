@@ -1,12 +1,11 @@
 {
   "name": "vue2-validus",
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0-beta.5",
   "description": "Extensible lightweight validation library for Vue 2 Composition API",
   "author": "Josh Gamble",
   "license": "MIT",
   "main": "dist/vue2-validus.cjs.js",
   "module": "dist/vue2-validus.esm.js",
-  "browser": "dist/vue2-validus.umd.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist/**/*"

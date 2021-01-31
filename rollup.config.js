@@ -30,10 +30,6 @@ function createEntry(config) {
       format: config.format
     },
     external: ['vue', '@vue/composition-api'],
-    globals: {
-      'vue': 'Vue',
-      '@vue/composition-api': 'VueCompositionApi'
-    },
     onwarn: (msg, warn) => {
       if (!/Circular/.test(msg)) {
         warn(msg)
@@ -44,7 +40,8 @@ function createEntry(config) {
   if (config.format === 'umd') {
     c.output.name = c.output.name || 'vue2-validus'
     c.output.globals = { 
-      'vue': 'vue'
+      'vue': 'vue',
+      '@vue/composition-api': 'VueCompositionApi'
     }
   }
 
@@ -64,6 +61,6 @@ function createEntry(config) {
 // UMD (for browser)
 export default createEntries([
   { input: 'src/index.ts', file: pkg.main, format: 'cjs' },
-  { input: 'src/index.ts', file: pkg.module, format: 'es' },
-  { input: 'src/index.ts', file: pkg.browser, format: 'umd' }
+  { input: 'src/index.ts', file: pkg.module, format: 'es' }
+  // { input: 'src/index.ts', file: pkg.browser, format: 'umd' }
 ])
