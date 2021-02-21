@@ -14,6 +14,8 @@
 
 View the vue-validus [documentation](https://vue-validus.devtavern.com) for a complete guide, including examples and API reference.  The documentation is for Vue 3 but will be mostly accurate for Vue 2 with Composition API, except for the difference in imports.
 
+For support with Vue 2 Composition API, use [vue2-validus](https://github.com/dev-tavern/vue2-validus).
+
 ### Install
 ```bash
 # install with npm
