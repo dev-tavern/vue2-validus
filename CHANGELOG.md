@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.2] - 2021-08-15
+
+* Bump ws from 7.4.1 to 7.5.3
+* Bump path-parse from 1.0.6 to 1.0.7
+* Bump lodash from 4.17.20 to 4.17.21
+* Bump browserslist from 4.16.3 to 4.16.7
+* Bump glob-parent from 5.1.1 to 5.1.2
+* Bump hosted-git-info from 2.8.8 to 2.8.9
+
 ## [1.0.1] - 2021-02-26
 
 * Updates for IE compatibility:
@@ -15,5 +24,6 @@
   * support for custom validators
   * typings
 
+[1.0.2]: https://github.com/dev-tavern/vue2-validus/releases/tag/v1.0.2
 [1.0.1]: https://github.com/dev-tavern/vue2-validus/releases/tag/v1.0.1
 [1.0.0]: https://github.com/dev-tavern/vue2-validus/releases/tag/v1.0.0
