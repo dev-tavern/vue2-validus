@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.3] - 2022-02-14
+
+* Bump tmpl from 1.0.4 to 1.0.5
+
 ## [1.0.2] - 2021-08-15
 
 * Bump ws from 7.4.1 to 7.5.3
@@ -24,6 +28,7 @@
   * support for custom validators
   * typings
 
+[1.0.3]: https://github.com/dev-tavern/vue2-validus/releases/tag/v1.0.3
 [1.0.2]: https://github.com/dev-tavern/vue2-validus/releases/tag/v1.0.2
 [1.0.1]: https://github.com/dev-tavern/vue2-validus/releases/tag/v1.0.1
 [1.0.0]: https://github.com/dev-tavern/vue2-validus/releases/tag/v1.0.0
