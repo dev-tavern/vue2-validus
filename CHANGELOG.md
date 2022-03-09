@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.4] - 2022-03-08
+
+* Update `Field` types for properties: `value`, `invalid`
+* Update `FieldGroup` type for property: `invalid`
+* Update type guards for `Field` and `FieldGroup`
+
 ## [1.0.3] - 2022-02-14
 
 * Bump tmpl from 1.0.4 to 1.0.5
@@ -28,6 +34,7 @@
   * support for custom validators
   * typings
 
+[1.0.4]: https://github.com/dev-tavern/vue2-validus/releases/tag/v1.0.4
 [1.0.3]: https://github.com/dev-tavern/vue2-validus/releases/tag/v1.0.3
 [1.0.2]: https://github.com/dev-tavern/vue2-validus/releases/tag/v1.0.2
 [1.0.1]: https://github.com/dev-tavern/vue2-validus/releases/tag/v1.0.1
