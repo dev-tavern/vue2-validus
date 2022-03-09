@@ -1,6 +1,6 @@
 {
   "name": "vue2-validus",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Extensible lightweight validation library for Vue 2 Composition API",
   "author": "Josh Gamble",
   "license": "MIT",
